@@ -70,6 +70,8 @@ void CargaRegistros(char* filename) {
 }
 
 // Métricas
+
+//Pizza más vendida
 char* pms(int *size, struct Registro *orders) {
     char *resultado = malloc(256);
     int max = -1;
@@ -88,6 +90,7 @@ char* pms(int *size, struct Registro *orders) {
     snprintf(resultado, 256, "Pizza mas vendida: %s (%d ventas)", pizza, max);
     return resultado;
 }
+
 
 char* pls(int *size, struct Registro *orders) {
     char *resultado = malloc(256);
